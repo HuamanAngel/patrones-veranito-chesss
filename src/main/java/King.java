@@ -1,3 +1,5 @@
+package java;
+
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
 // -------------------------------------------------------------------------
@@ -64,7 +66,7 @@ public class King
      * @return true if checked, false if not checked
      */
     public boolean isChecked( ChessGameBoard board ){
-        return getCurrentAttackers( board ).size() > 0;
+        return !getCurrentAttackers( board ).isEmpty();
     }
     /**
      * Creates an icon for this piece depending on the piece's color.
